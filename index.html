@@ -1,623 +1,638 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Sree Sai Dronadula | AI & ML Developer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sree Sai Dronadula | AI & ML Developer</title>
 
-        <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-        <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <script>
-        // Custom Tailwind Configuration
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'inter': ['Inter', 'sans-serif']
-                    },
-                    colors: {
-                        'slate': {
-                            800: '#1e293b',
-                            900: '#0f172a'
-                        },
-                        'blue': {
-                            400: '#60a5fa',
-                            500: '#3b82f6'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <script>
+        // Custom Tailwind Configuration
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        'slate': {
+                            800: '#1e293b',
+                            900: '#0f172a'
+                        },
+                        'blue': {
+                            400: '#60a5fa',
+                            500: '#3b82f6'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
-    <style>
-        /* Blinking cursor for typing animation */
-        .typing-cursor {
-            animation: blink 0.7s infinite;
-        }
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-    </style>
+    <style>
+        /* Blinking cursor for typing animation */
+        .typing-cursor {
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
 </head>
 <body class="bg-slate-900 text-gray-300 font-inter antialiased">
 
-        <header class="sticky top-0 z-50 w-full bg-slate-900/80 backdrop-blur-md shadow-md">
-        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                                <div class="flex-shrink-0">
-                    <a href="#home" class="text-2xl font-bold text-white">SAI</a>
-                </div>
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 w-full bg-slate-900/80 backdrop-blur-md shadow-md">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo / Name -->
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold text-white">SAI</a>
+                </div>
 
-                                <div class="hidden md:block">
-                    <div class="ml-6 flex items-baseline space-x-3">
-                        <a href="#home" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">Home</a>
-                        <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">About</a>
-                        <a href="#services" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">Services</a>
-                        <a href="#projects" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">Projects</a>
-                        <a href="#clients" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">For Clients</a>
-                        <a href="blogs.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">Blogs</a>
-                        <a href="#resume" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">Resume</a>
-                        <a href="#contact" class="ml-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 transition duration-300">Get in Touch</a>
-                    </div>
-                </div>
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-6 flex items-baseline space-x-3">
+                        <a href="#home" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">Home</a>
+                        <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">About</a>
+                        <a href="#services" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">Services</a>
+                        <a href="#projects" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">Projects</a>
+                        <a href="#clients" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">For Clients</a>
+                        <a href="blogs.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">Blogs</a>
+                        <a href="#resume" class="px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-slate-800">Resume</a>
+                        <a href="#contact" class="ml-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 transition duration-300">Get in Touch</a>
+                    </div>
+                </div>
 
-                                <div class="-mr-2 flex md:hidden">
-                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="sr-only">Open main menu</span>
-                        <i data-lucide="menu" class="block h-6 w-6" id="menu-icon-open"></i>
-                        <i data-lucide="x" class="hidden h-6 w-6" id="menu-icon-close"></i>
-                    </button>
-                </div>
-            </div>
-        </nav>
+                <!-- Mobile Menu Button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-slate-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i data-lucide="menu" class="block h-6 w-6" id="menu-icon-open"></i>
+                        <i data-lucide="x" class="hidden h-6 w-6" id="menu-icon-close"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
 
-                <div class="hidden md:hidden" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">Home</a>
-                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">About</a>
-                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">Services</a>
-                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">Projects</a>
-                <a href="#clients" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">Work with me</a>
-                <a href="blogs.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">Blogs</a>
-                <a href="#resume" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">Resume</a>
-                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-500 hover:bg-blue-600">Get in Touch</a>
-            </div>
-        </div>
-    </header>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">About</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">Services</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">Projects</a>
+                <a href="#clients" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">Work with me</a>
+                <a href="blogs.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">Blogs</a>
+                <a href="#resume" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-slate-800">Resume</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-blue-500 hover:bg-blue-600">Get in Touch</a>
+            </div>
+        </div>
+    </header>
 
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8">
 
-                <section id="home" class="min-h-screen flex items-center pt-16 md:pt-0">
-            <div class="flex flex-col md:flex-row items-center w-full gap-8">
+        <!-- HERO -->
+        <section id="home" class="min-h-screen flex items-center pt-16 md:pt-0">
+            <div class="flex flex-col md:flex-row items-center w-full gap-8">
 
-                <div class="w-full md:w-1/2 max-w-xl text-center md:text-left">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
-                        Hi, I'm Sree Sai
-                    </h1>
-                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-blue-400 mt-2 h-20 md:h-24">
-                        I build <br class="md:hidden">
-                        <span id="typing-text" class="text-white"></span><span class="typing-cursor">|</span>
-                    </h2>
-                    <p class="mt-4 text-lg text-gray-400 max-w-lg">
-                        A CSE student specializing in AI & Data Science with hands-on experience in LLMs, Machine Learning, and Geospatial AI. Proven leader and hackathon winner.
-                    </p>
-                    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                        <a href="#projects" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 transition duration-300 shadow-lg">
-                            <i data-lucide="lightbulb" class="mr-2 -ml-1 h-5 w-5"></i>
-                            View My Projects
-                        </a>
-                        <a href="#clients" class="inline-flex items-center justify-center px-6 py-3 border border-gray-600 text-base font-medium rounded-md text-white bg-slate-800 hover:bg-slate-700 transition duration-300">
-                            <i data-lucide="briefcase" class="mr-2 -ml-1 h-5 w-5"></i>
-                            Work with me
-                        </a>
-                    </div>
-                </div>
+                <div class="w-full md:w-1/2 max-w-xl text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                        Hi, I'm Sree Sai
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-blue-400 mt-2 h-20 md:h-24">
+                        I build <br class="md:hidden">
+                        <span id="typing-text" class="text-white"></span><span class="typing-cursor">|</span>
+                    </h2>
+                    <p class="mt-4 text-lg text-gray-400 max-w-lg">
+                        A CSE student specializing in AI & Data Science with hands-on experience in LLMs, Machine Learning, and Geospatial AI. Proven leader and hackathon winner.
+                    </p>
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="#projects" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 transition duration-300 shadow-lg">
+                            <i data-lucide="lightbulb" class="mr-2 -ml-1 h-5 w-5"></i>
+                            View My Projects
+                        </a>
+                        <a href="#clients" class="inline-flex items-center justify-center px-6 py-3 border border-gray-600 text-base font-medium rounded-md text-white bg-slate-800 hover:bg-slate-700 transition duration-300">
+                            <i data-lucide="briefcase" class="mr-2 -ml-1 h-5 w-5"></i>
+                            Work with me
+                        </a>
+                    </div>
+                </div>
 
-                              <div class="hidden md:flex md:w-1/2 items-center justify-end">
-                   <img src="./PPP.svg"
-                        alt="Abstract AI and Data Visualization Graphic"
-                        class="rounded-lg shadow-2xl w-auto max-w-[640px] object-contain object-right" />
-               </div>
+               <!-- HERO IMAGE (Hidden on small screens so it doesn't overlap) -->
+               <div class="hidden md:flex md:w-1/2 items-center justify-end">
+                   <img src="./PPP.svg"
+                        alt="Abstract AI and Data Visualization Graphic"
+                        class="rounded-lg shadow-2xl w-auto max-w-[640px] object-contain object-right" />
+               </div>
 
-            </div>
-        </section>
+            </div>
+        </section>
 
-                <section id="about" class="py-24">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
-                <div class="md:col-span-1">
-                    <img src="./GIT_PIC_R2.jpg"
-                         alt="Sree Sai Dronadula"
-                         class="rounded-full shadow-2xl mx-auto w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-slate-800">
-                </div>
-                <div class="md:col-span-2 text-center md:text-left">
-                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl mb-4">About Me</h2>
-                    <p class="text-lg text-gray-400 mb-4">
-                        I'm an AI & Data Science developer based in Bangalore, India. My passion lies in building intelligent systems that solve real-world problems, from developing advanced Language Models to engineering complex data pipelines.
-                    </p>
-                    <p class="text-lg text-gray-400 mb-6">
-                        As the Head of <span class="text-white font-semibold">SALVO - The AI Club</span> at SASTRA, I lead workshops and mentor over 100 members, fostering a community of innovation. I thrive in high-pressure environments, as shown by my performance in hackathons like SIH and Intel OneAPI.
-                    </p>
-                    <a href="#resume" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 transition duration-300 shadow-lg">
-                        <i data-lucide="download" class="mr-2 -ml-1 h-5 w-5"></i>
-                        View / Download CV
-                    </a>
-                </div>
-            </div>
-        </section>
+        <!-- ABOUT -->
+        <section id="about" class="py-24">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+                <div class="md:col-span-1">
+                    <img src="./GIT_PIC_R2.jpg"
+                         alt="Sree Sai Dronadula"
+                         class="rounded-full shadow-2xl mx-auto w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-slate-800">
+                </div>
+                <div class="md:col-span-2 text-center md:text-left">
+                    <h2 class="text-3xl font-extrabold text-white sm:text-4xl mb-4">About Me</h2>
+                    <p class="text-lg text-gray-400 mb-4">
+                        I'm an AI & Data Science developer based in Bangalore, India. My passion lies in building intelligent systems that solve real-world problems, from developing advanced Language Models to engineering complex data pipelines.
+                    </p>
+                    <p class="text-lg text-gray-400 mb-6">
+                        As the Head of <span class="text-white font-semibold">SALVO - The AI Club</span> at SASTRA, I lead workshops and mentor over 100 members, fostering a community of innovation. I thrive in high-pressure environments, as shown by my performance in hackathons like SIH and Intel OneAPI.
+                    </p>
+                    <a href="#resume" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 transition duration-300 shadow-lg">
+                        <i data-lucide="download" class="mr-2 -ml-1 h-5 w-5"></i>
+                        View / Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
 
-                <section id="services" class="py-24 bg-slate-900/50 rounded-lg">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">What I Do</h2>
-                <p class="mt-4 text-xl text-gray-400">My core technical services and expertise.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-slate-800 p-8 rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
-                    <div class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-blue-500 text-white mb-6">
-                        <i data-lucide="brain-circuit" class="h-6 w-6"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">LLM & GenAI Development</h3>
-                    <p class="text-gray-400">
-                        Building and integrating custom LLMs (OpenAI, Llama, Mistral). Specializing in Retrieval-Augmented Generation (RAG) pipelines and advanced prompt engineering for domain-specific chatbots.
-                    </p>
-                </div>
+        <!-- SERVICES -->
+        <section id="services" class="py-24 bg-slate-900/50 rounded-lg">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">What I Do</h2>
+                <p class="mt-4 text-xl text-gray-400">My core technical services and expertise.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-800 p-8 rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                    <div class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-blue-500 text-white mb-6">
+                        <i data-lucide="brain-circuit" class="h-6 w-6"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">LLM & GenAI Development</h3>
+                    <p class="text-gray-400">
+                        Building and integrating custom LLMs (OpenAI, Llama, Mistral). Specializing in Retrieval-Augmented Generation (RAG) pipelines and advanced prompt engineering for domain-specific chatbots.
+                    </p>
+                </div>
 
-                <div class="bg-slate-800 p-8 rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
-                    <div class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-blue-500 text-white mb-6">
-                        <i data-lucide="cpu" class="h-6 w-6"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Machine Learning & AI</h3>
-                    <p class="text-gray-400">
-                        Expertise in Deep Learning (PyTorch, TensorFlow) and classic ML (scikit-learn). Hands-on experience with Reinforcement Learning (DQN, Q-learning) and ANN-based classifiers.
-                    </p>
-                </div>
+                <div class="bg-slate-800 p-8 rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                    <div class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-blue-500 text-white mb-6">
+                        <i data-lucide="cpu" class="h-6 w-6"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Machine Learning & AI</h3>
+                    <p class="text-gray-400">
+                        Expertise in Deep Learning (PyTorch, TensorFlow) and classic ML (scikit-learn). Hands-on experience with Reinforcement Learning (DQN, Q-learning) and ANN-based classifiers.
+                    </p>
+                </div>
 
-                <div class="bg-slate-800 p-8 rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
-                    <div class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-blue-500 text-white mb-6">
-                        <i data-lucide="database-zap" class="h-6 w-6"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Data Engineering & Pipelines</h3>
-                    <p class="text-gray-400">
-                        Automating ETL (Extract, Transform, Load) processes and data wrangling with Pandas & NumPy. Proficient in containerization with Docker and fundamentals of AWS for deployment.
-                    </p>
-                </div>
-            </div>
-        </section>
+                <div class="bg-slate-800 p-8 rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                    <div class="inline-flex items-center justify-center h-12 w-12 rounded-full bg-blue-500 text-white mb-6">
+                        <i data-lucide="database-zap" class="h-6 w-6"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Data Engineering & Pipelines</h3>
+                    <p class="text-gray-400">
+                        Automating ETL (Extract, Transform, Load) processes and data wrangling with Pandas & NumPy. Proficient in containerization with Docker and fundamentals of AWS for deployment.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-                <section id="projects" class="py-24">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Featured Projects</h2>
-                <p class="mt-4 text-xl text-gray-400">A selection of my best work.</p>
-            </div>
+        <!-- PROJECTS -->
+        <section id="projects" class="py-24">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Featured Projects</h2>
+                <p class="mt-4 text-xl text-gray-400">A selection of my best work.</p>
+            </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-                                <div class="bg-slate-800 rounded-lg shadow-2xl overflow-hidden group">
-                    <img src="https://placehold.co/600x400/1e293b/94a3b8?text=ISRO+RAG+Chatbot" alt="ISRO RAG Chatbot" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-white mb-3">ISRO RAG Chatbot</h3>
-                        <p class="text-gray-400 mb-4">
-                            A Retrieval-Augmented Generation chatbot for ISRO Q&A. Uses web-scraped content, embedding-based semantic search, and LLM-powered grounded answer generation.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">RAG</span>
-                            <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">LLM</span>
-                            <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">Semantic Search</span>
-                        </div>
-                        <a href="https://github.com/DS-SAi2005/isro-rag-chatbot" target="_blank" class="inline-flex items-center font-medium text-blue-400 hover:text-blue-300 transition-colors" rel="noopener">
-                            View on GitHub
-                            <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Project cards -->
+                <div class="bg-slate-800 rounded-lg shadow-2xl overflow-hidden group">
+                    <img src="https://placehold.co/600x400/1e293b/94a3b8?text=ISRO+RAG+Chatbot" alt="ISRO RAG Chatbot" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-3">ISRO RAG Chatbot</h3>
+                        <p class="text-gray-400 mb-4">
+                            A Retrieval-Augmented Generation chatbot for ISRO Q&A. Uses web-scraped content, embedding-based semantic search, and LLM-powered grounded answer generation.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">RAG</span>
+                            <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">LLM</span>
+                            <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">Semantic Search</span>
+                        </div>
+                        <a href="https://github.com/DS-SAi2005/isro-rag-chatbot" target="_blank" class="inline-flex items-center font-medium text-blue-400 hover:text-blue-300 transition-colors" rel="noopener">
+                            View on GitHub
+                            <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                        </a>
+                    </div>
+                </div>
 
-                <div class="bg-slate-800 rounded-lg shadow-2xl overflow-hidden group">
-                    <img src="https://placehold.co/600x400/1e293b/94a3b8?text=RL+Playground" alt="Reinforcement Learning Playground" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-white mb-3">Reinforcement Learning Playground</h3>
-                        <p class="text-gray-400 mb-4">
-                            An interactive RL environment supporting Q-learning and DQN variants with customizable grids, human-play mode, and real-time training metrics.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">Reinforcement Learning</span>
-                            <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">PyTorch</span>
-                            <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">DQN</span>
-                        </div>
-                        <a href="https://github.com/DS-SAi2005/rl-workshop-playground" target="_blank" class="inline-flex items-center font-medium text-blue-400 hover:text-blue-300 transition-colors" rel="noopener">
-                            View on GitHub
-                            <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
-                        </a>
-                    </div>
-                </div>
+                <div class="bg-slate-800 rounded-lg shadow-2xl overflow-hidden group">
+                    <img src="https://placehold.co/600x400/1e293b/94a3b8?text=RL+Playground" alt="Reinforcement Learning Playground" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-3">Reinforcement Learning Playground</h3>
+                        <p class="text-gray-400 mb-4">
+                            An interactive RL environment supporting Q-learning and DQN variants with customizable grids, human-play mode, and real-time training metrics.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">Reinforcement Learning</span>
+                            <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">PyTorch</span>
+                            <span class="bg-blue-500/20 text-blue-300 px-3 py-1 rounded-full text-sm font-medium">DQN</span>
+                        </div>
+                        <a href="https://github.com/DS-SAi2005/rl-workshop-playground" target="_blank" class="inline-flex items-center font-medium text-blue-400 hover:text-blue-300 transition-colors" rel="noopener">
+                            View on GitHub
+                            <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                        </a>
+                    </div>
+                </div>
 
-                <div class="bg-slate-800 rounded-lg shadow-2xl overflow-hidden group">
-                    <img src="https://placehold.co/600x400/1e293b/94a3b8?text=AI+Gait+Analysis" alt="AI Gait Analysis" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-white mb-3">LLM-Driven Gait Analysis (Internship)</h3>
-                        <p class="text-gray-400 mb-4">Developed an LLM-driven system to generate clinician-friendly reports and flag abnormalities from gait analysis data. Automated the full ETL and PDF generation pipeline.</p>
-                    </div>
-                </div>
+                <div class="bg-slate-800 rounded-lg shadow-2xl overflow-hidden group">
+                    <img src="https://placehold.co/600x400/1e293b/94a3b8?text=AI+Gait+Analysis" alt="AI Gait Analysis" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-3">LLM-Driven Gait Analysis (Internship)</h3>
+                        <p class="text-gray-400 mb-4">Developed an LLM-driven system to generate clinician-friendly reports and flag abnormalities from gait analysis data. Automated the full ETL and PDF generation pipeline.</p>
+                    </div>
+                </div>
 
-                <div class="bg-slate-800 rounded-lg shadow-2xl overflow-hidden group">
-                    <img src="https://placehold.co/600x400/1e293b/94a3b8?text=Fitness+Tracker" alt="Mobile Fitness Tracker" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-white mb-3">Mobile Fitness Tracker</h3>
-                        <p class="text-gray-400 mb-4">Engineered sensor signal-processing pipelines in MATLAB to estimate steps, distance, calories, and classify activities like sitting, standing, and running.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <div class="bg-slate-800 rounded-lg shadow-2xl overflow-hidden group">
+                    <img src="https://placehold.co/600x400/1e293b/94a3b8?text=Fitness+Tracker" alt="Mobile Fitness Tracker" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-white mb-3">Mobile Fitness Tracker</h3>
+                        <p class="text-gray-400 mb-4">Engineered sensor signal-processing pipelines in MATLAB to estimate steps, distance, calories, and classify activities like sitting, standing, and running.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <section id="clients" class="py-24 bg-slate-900/40 rounded-lg">
-            <div class="max-w-4xl mx-auto text-center mb-8">
-                <h2 class="text-3xl font-extrabold text-white">Work with me — Projects & Collaborations</h2>
-                <p class="text-gray-400 mt-3">Have a project idea? Tell me about it — we'll discuss scope, timeline and budget, and I’ll share a proposal tailored to your needs.</p>
-            </div>
+        <!-- CLIENTS / WORK WITH ME SECTION -->
+        <section id="clients" class="py-24 bg-slate-900/40 rounded-lg">
+            <div class="max-w-4xl mx-auto text-center mb-8">
+                <h2 class="text-3xl font-extrabold text-white">Work with me — Projects & Collaborations</h2>
+                <p class="text-gray-400 mt-3">Have a project idea? Tell me about it — we'll discuss scope, timeline and budget, and I’ll share a proposal tailored to your needs.</p>
+            </div>
 
-            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-                <div class="text-left">
-                    <h3 class="text-xl font-semibold text-white mb-3">How we collaborate</h3>
-                    <ul class="list-disc pl-5 text-gray-400 space-y-2 mb-6">
-                        <li>Discovery conversation to understand goals & constraints</li>
-                        <li>Proposal with milestones, timeline and cost estimate</li>
-                        <li>Prototype → feedback → delivery</li>
-                        <li>Optional deployment, monitoring & support</li>
-                    </ul>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <div class="text-left">
+                    <h3 class="text-xl font-semibold text-white mb-3">How we collaborate</h3>
+                    <ul class="list-disc pl-5 text-gray-400 space-y-2 mb-6">
+                        <li>Discovery conversation to understand goals & constraints</li>
+                        <li>Proposal with milestones, timeline and cost estimate</li>
+                        <li>Prototype → feedback → delivery</li>
+                        <li>Optional deployment, monitoring & support</li>
+                    </ul>
 
-                    <h3 class="text-lg font-semibold text-white mb-2">Common project types</h3>
-                    <div class="text-gray-400 space-y-2">
-                        <p>- LLM integrations, assistants & RAG systems</p>
-                        <p>- End-to-end ML model development & deployment</p>
-                        <p>- Geospatial analytics, mapping & GNSS solutions</p>
-                        <p>- Data engineering, ETL, and production pipelines</p>
-                    </div>
-                </div>
+                    <h3 class="text-lg font-semibold text-white mb-2">Common project types</h3>
+                    <div class="text-gray-400 space-y-2">
+                        <p>- LLM integrations, assistants & RAG systems</p>
+                        <p>- End-to-end ML model development & deployment</p>
+                        <p>- Geospatial analytics, mapping & GNSS solutions</p>
+                        <p>- Data engineering, ETL, and production pipelines</p>
+                    </div>
+                </div>
 
-                <div>
-                    <form id="client-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-4 bg-slate-800 p-6 rounded-lg shadow-lg">
-                                                <input type="hidden" name="access_key" value="2aa9a251-2863-4f7c-a614-84b0135bebd4">
-                        <input type="hidden" name="subject" value="Project Enquiry — Sree Sai">
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <div>
+                    <form id="client-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-4 bg-slate-800 p-6 rounded-lg shadow-lg">
+                        <!-- web3forms access key (your provided key) -->
+                        <input type="hidden" name="access_key" value="2aa9a251-2863-4f7c-a614-84b0135bebd4">
+                        <input type="hidden" name="subject" value="Project Enquiry — Sree Sai">
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                        <div>
-                            <label for="client-name" class="block text-sm text-gray-300 mb-1">Name</label>
-                            <input id="client-name" name="name" required class="block w-full px-4 py-3 rounded-md bg-slate-900 text-white" placeholder="Full name / company name">
-                        </div>
-                        <div>
-                            <label for="client-email" class="block text-sm text-gray-300 mb-1">Email</label>
-                            <input id="client-email" type="email" name="email" required class="block w-full px-4 py-3 rounded-md bg-slate-900 text-white" placeholder="your@company.com">
-                        </div>
-                                                <div>
-                            <label for="client-phone" class="block text-sm text-gray-300 mb-1">Phone Number (optional)</label>
-                            <input id="client-phone" type="tel" name="phone" class="block w-full px-4 py-3 rounded-md bg-slate-900 text-white" placeholder="e.g. +91 98765 43210">
-                        </div>
-                                                                        <div>
-                            <label for="client-company" class="block text-sm text-gray-300 mb-1">Company / Project (optional)</label>
-                            <input id="client-company" name="company" class="block w-full px-4 py-3 rounded-md bg-slate-900 text-white" placeholder="Optional">
-                        </div>
-                        <div>
-                            <label for="client-budget" class="block text-sm text-gray-300 mb-1">Estimated Budget (optional)</label>
-                            <input id="client-budget" name="budget" class="block w-full px-4 py-3 rounded-md bg-slate-900 text-white" placeholder="e.g. $1,000 - $5,000">
-                        </div>
-                        <div>
-                            <label for="client-message" class="block text-sm text-gray-300 mb-1">Brief description & key deliverables</label>
-                            <textarea id="client-message" name="message" rows="5" required class="block w-full px-4 py-3 rounded-md bg-slate-900 text-white" placeholder="Describe the problem, deliverables, timeline and any constraints"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 text-white bg-blue-500 rounded-md">Send enquiry</button>
-                        </div>
-                        <div id="client-form-result" class="text-center text-lg"></div>
-                    </form>
-                </div>
-            </div>
-        </section>
+                        <div>
+                            <label for="client-name" class="block text-sm text-gray-300 mb-1">Name</label>
+                            <input id="client-name" name="name" required class="block w-full px-4 py-3 rounded-md bg-slate-900 text-white" placeholder="Full name / company name">
+                        </div>
+                        <div>
+                            <label for="client-email" class="block text-sm text-gray-300 mb-1">Email</label>
+                            <input id="client-email" type="email" name="email" required class="block w-full px-4 py-3 rounded-md bg-slate-900 text-white" placeholder="your@company.com">
+                        </div>
+                        <div>
+                            <label for="client-company" class="block text-sm text-gray-300 mb-1">Company / Project (optional)</label>
+                            <input id="client-company" name="company" class="block w-full px-4 py-3 rounded-md bg-slate-900 text-white" placeholder="Optional">
+                        </div>
+                        <div>
+                            <label for="client-budget" class="block text-sm text-gray-300 mb-1">Estimated Budget (optional)</label>
+                            <input id="client-budget" name="budget" class="block w-full px-4 py-3 rounded-md bg-slate-900 text-white" placeholder="e.g. $1,000 - $5,000">
+                        </div>
+                        <div>
+                            <label for="client-message" class="block text-sm text-gray-300 mb-1">Brief description & key deliverables</label>
+                            <textarea id="client-message" name="message" rows="5" required class="block w-full px-4 py-3 rounded-md bg-slate-900 text-white" placeholder="Describe the problem, deliverables, timeline and any constraints"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 text-white bg-blue-500 rounded-md">Send enquiry</button>
+                        </div>
+                        <div id="client-form-result" class="text-center text-lg"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-                <section id="resume" class="py-24">
-            <div class="max-w-5xl mx-auto">
-                <div class="flex items-center justify-between mb-6">
-                    <h2 class="text-2xl font-extrabold text-white">Resume</h2>
-                    <a href="./SSD_RESUME_2K27.pdf" download="SreeSaiDronadula_Resume.pdf" class="inline-flex items-center px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
-                        <i data-lucide="download" class="mr-2 h-4 w-4"></i>Download PDF
-                    </a>
-                </div>
+        <!-- RESUME SECTION -->
+        <section id="resume" class="py-24">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-2xl font-extrabold text-white">Resume</h2>
+                    <a href="./SSD_RESUME_2K27.pdf" download="SreeSaiDronadula_Resume.pdf" class="inline-flex items-center px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
+                        <i data-lucide="download" class="mr-2 h-4 w-4"></i>Download PDF
+                    </a>
+                </div>
 
-                <div class="bg-slate-800 rounded-lg shadow-2xl overflow-hidden">
-                    <div class="w-full h-[80vh] bg-black">
-                        <iframe src="./SSD_RESUME_2K27.pdf" class="w-full h-full" title="Resume PDF"></iframe>
-                    </div>
-                    <div class="p-4 text-gray-400 text-sm">
-                        If the PDF doesn't display, you can <a href="./SSD_RESUME_2K27.pdf" download class="text-blue-400">download it here</a>.
-                    </div>
-                </div>
-            </div>
-        </section>
+                <div class="bg-slate-800 rounded-lg shadow-2xl overflow-hidden">
+                    <div class="w-full h-[80vh] bg-black">
+                        <iframe src="./SSD_RESUME_2K27.pdf" class="w-full h-full" title="Resume PDF"></iframe>
+                    </div>
+                    <div class="p-4 text-gray-400 text-sm">
+                        If the PDF doesn't display, you can <a href="./SSD_RESUME_2K27.pdf" download class="text-blue-400">download it here</a>.
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                <section id="contact" class="py-24">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Get In Touch</h2>
-                <p class="mt-4 text-xl text-gray-400">I'm open to new opportunities and collaborations — tell me about your project and I'll reply with next steps.</p>
-            </div>
+        <!-- CONTACT -->
+        <section id="contact" class="py-24">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Get In Touch</h2>
+                <p class="mt-4 text-xl text-gray-400">I'm open to new opportunities and collaborations — tell me about your project and I'll reply with next steps.</p>
+            </div>
 
-            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-                                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
-                                        <input type="hidden" name="access_key" value="2aa9a251-2863-4f7c-a614-84b0135bebd4">
-                    <input type="hidden" name="subject" value="New Portfolio Contact from Sree Sai">
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                    <!-- use same access key -->
+                    <input type="hidden" name="access_key" value="2aa9a251-2863-4f7c-a614-84b0135bebd4">
+                    <input type="hidden" name="subject" value="New Portfolio Contact from Sree Sai">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Full Name</label>
-                        <input type="text" name="name" id="name" required class="block w-full px-4 py-3 rounded-md bg-slate-800 border-slate-700 text-white focus:ring-blue-500 focus:border-blue-500">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
-                        <input type="email" name="email" id="email" required class="block w-full px-4 py-3 rounded-md bg-slate-800 border-slate-700 text-white focus:ring-blue-500 focus:border-blue-500">
-                    </div>
-                                                <div>
-                            <label for="phone" class="block text-sm font-medium text-gray-300 mb-1">Phone Number (optional)</label>
-                            <input type="tel" name="phone" id="phone" class="block w-full px-4 py-3 rounded-md bg-slate-800 border-slate-700 text-white focus:ring-blue-500 focus:border-blue-500" placeholder="e.g. +91 98765 43210">
-                    </div>
-                                                                    <div>
-                        <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
-                        <textarea id="message" name="message" rows="5" required class="block w-full px-4 py-3 rounded-md bg-slate-800 border-slate-700 text-white focus:ring-blue-500 focus:border-blue-500"></textarea>
-                    </div>
-                    <div>
-                        <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 transition duration-300 shadow-lg">
-                            <i data-lucide="send" class="mr-2 -ml-1 h-5 w-5"></i>
-                            Send Message
-                        </button>
-                    </div>
-                    <div id="form-result" class="text-center text-lg"></div>
-                </form>
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Full Name</label>
+                        <input type="text" name="name" id="name" required class="block w-full px-4 py-3 rounded-md bg-slate-800 border-slate-700 text-white focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                        <input type="email" name="email" id="email" required class="block w-full px-4 py-3 rounded-md bg-slate-800 border-slate-700 text-white focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="block w-full px-4 py-3 rounded-md bg-slate-800 border-slate-700 text-white focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 transition duration-300 shadow-lg">
+                            <i data-lucide="send" class="mr-2 -ml-1 h-5 w-5"></i>
+                            Send Message
+                        </button>
+                    </div>
+                    <div id="form-result" class="text-center text-lg"></div>
+                </form>
 
-                                <div class="space-y-6 text-center md:text-left">
-                    <div class="flex items-center justify-center md:justify-start">
-                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-slate-800 rounded-md">
-                            <i data-lucide="mail" class="h-6 w-6 text-blue-400"></i>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-medium text-white">Email</h3>
-                            <a href="mailto:sai.iirs.isro@gmail.com" class="text-gray-400 hover:text-blue-400">sai.iirs.isro@gmail.com</a>
-                        </div>
-                    </div>
+                <!-- Contact Info -->
+                <div class="space-y-6 text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start">
+                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-slate-800 rounded-md">
+                            <i data-lucide="mail" class="h-6 w-6 text-blue-400"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-white">Email</h3>
+                            <a href="mailto:sai.iirs.isro@gmail.com" class="text-gray-400 hover:text-blue-400">sai.iirs.isro@gmail.com</a>
+                        </div>
+                    </div>
 
-                    <div class="flex items-center justify-center md:justify-start">
-                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-slate-800 rounded-md">
-                            <i data-lucide="phone" class="h-6 w-6 text-blue-400"></i>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-medium text-white">Phone</h3>
-                            <a href="tel:+916362786797" class="text-gray-400 hover:text-blue-400">+91 63627 86797</a>
-                        </div>
-                    </div>
+                    <div class="flex items-center justify-center md:justify-start">
+                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-slate-800 rounded-md">
+                            <i data-lucide="phone" class="h-6 w-6 text-blue-400"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-white">Phone</h3>
+                            <a href="tel:+916362786797" class="text-gray-400 hover:text-blue-400">+91 63627 86797</a>
+                        </div>
+                    </div>
 
-                    <div class="flex items-center justify-center md:justify-start">
-                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-slate-800 rounded-md">
-                            <i data-lucide="map-pin" class="h-6 w-6 text-blue-400"></i>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-medium text-white">Location</h3>
-                            <p class="text-gray-400">Bangalore, India</p>
-                        </div>
-                    </div>
+                    <div class="flex items-center justify-center md:justify-start">
+                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-slate-800 rounded-md">
+                            <i data-lucide="map-pin" class="h-6 w-6 text-blue-400"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-white">Location</h3>
+                            <p class="text-gray-400">Bangalore, India</p>
+                        </div>
+                    </div>
 
-                    <div class="flex items-center justify-center md:justify-start">
-                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-slate-800 rounded-md">
-                            <i data-lucide="briefcase" class="h-6 w-6 text-blue-400"></i>
-                        </div>
-                        <div class="ml-4">
-                            <h3 class="text-lg font-medium text-white">Status</h3>
-                            <p class="text-gray-400">Open to new opportunities</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <div class="flex items-center justify-center md:justify-start">
+                        <div class="flex-shrink-0 h-12 w-12 flex items-center justify-center bg-slate-800 rounded-md">
+                            <i data-lucide="briefcase" class="h-6 w-6 text-blue-400"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-lg font-medium text-white">Status</h3>
+                            <p class="text-gray-400">Open to new opportunities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </main>
+    </main>
 
-        <footer class="bg-slate-900/50 border-t border-slate-800 mt-24">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                <p class="text-gray-400 text-sm">&copy; 2025 Sree Sai Dronadula. All rights reserved.</p>
+    <!-- FOOTER -->
+    <footer class="bg-slate-900/50 border-t border-slate-800 mt-24">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-gray-400 text-sm">&copy; 2025 Sree Sai Dronadula. All rights reserved.</p>
 
-                <p class="text-gray-400 text-sm">Designed and built by <span class="text-white font-semibold">SREE SAI DRONADULA</span></p>
+                <p class="text-gray-400 text-sm">Designed and built by <span class="text-white font-semibold">SREE SAI DRONADULA</span></p>
 
-                <div class="flex space-x-6">
-                    <a href="https://github.com/DS-SAi2005/" target="_blank" class="text-gray-400 hover:text-white transition-colors" rel="noopener">
-                        <span class="sr-only">GitHub</span>
-                        <i data-lucide="github" class="h-6 w-6"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/sree-sai-dronadula-346688255" target="_blank" class="text-gray-400 hover:text-white transition-colors" rel="noopener">
-                        <span class="sr-only">LinkedIn</span>
-                        <i data-lucide="linkedin" class="h-6 w-6"></i>
-                    </a>
-                    <a href="https://github.com/DS-SAi2005/" target="_blank" class="text-gray-400 hover:text-white transition-colors" rel="noopener">
-                        <span class="sr-only">Code</span>
-                        <i data-lucide="code" class="h-6 w-6"></i>
-                    </a>
-                    <a href="#resume" class="text-gray-400 hover:text-white transition-colors">
-                        <span class="sr-only">Resume</span>
-                        <i data-lucide="book-open" class="h-6 w-6"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
+                <div class="flex space-x-6">
+                    <a href="https://github.com/DS-SAi2005/" target="_blank" class="text-gray-400 hover:text-white transition-colors" rel="noopener">
+                        <span class="sr-only">GitHub</span>
+                        <i data-lucide="github" class="h-6 w-6"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sree-sai-dronadula-346688255" target="_blank" class="text-gray-400 hover:text-white transition-colors" rel="noopener">
+                        <span class="sr-only">LinkedIn</span>
+                        <i data-lucide="linkedin" class="h-6 w-6"></i>
+                    </a>
+                    <a href="https://github.com/DS-SAi2005/" target="_blank" class="text-gray-400 hover:text-white transition-colors" rel="noopener">
+                        <span class="sr-only">Code</span>
+                        <i data-lucide="code" class="h-6 w-6"></i>
+                    </a>
+                    <a href="#resume" class="text-gray-400 hover:text-white transition-colors">
+                        <span class="sr-only">Resume</span>
+                        <i data-lucide="book-open" class="h-6 w-6"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-        <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
+    <!-- JavaScript for interactivity -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
 
-            // 1. Initialize Lucide Icons
-            lucide.createIcons();
+            // 1. Initialize Lucide Icons
+            lucide.createIcons();
 
-            // 2. Mobile Menu Toggle
-            const menuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const iconOpen = document.getElementById('menu-icon-open');
-            const iconClose = document.getElementById('menu-icon-close');
+            // 2. Mobile Menu Toggle
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const iconOpen = document.getElementById('menu-icon-open');
+            const iconClose = document.getElementById('menu-icon-close');
 
-            if (menuButton) {
-                menuButton.addEventListener('click', () => {
-                    const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
-                    menuButton.setAttribute('aria-expanded', !isExpanded);
-                    mobileMenu.classList.toggle('hidden');
-                    iconOpen.classList.toggle('hidden');
-                    iconClose.classList.toggle('hidden');
-                });
-            }
+            if (menuButton) {
+                menuButton.addEventListener('click', () => {
+                    const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+                    menuButton.setAttribute('aria-expanded', !isExpanded);
+                    mobileMenu.classList.toggle('hidden');
+                    iconOpen.classList.toggle('hidden');
+                    iconClose.classList.toggle('hidden');
+                });
+            }
 
-            // 3. Smooth Scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    const href = this.getAttribute('href');
-                    if (!href || href === '#') return;
-                    e.preventDefault();
-                    const targetId = href;
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement){
-                        targetElement.scrollIntoView({ behavior: 'smooth' });
-                    }
+            // 3. Smooth Scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (!href || href === '#') return;
+                    e.preventDefault();
+                    const targetId = href;
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement){
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
 
-                    // Close mobile menu on link click
-                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
-                        menuButton.setAttribute('aria-expanded', 'false');
-                        iconOpen.classList.remove('hidden');
-                        iconClose.classList.add('hidden');
-                    }
-                });
-            });
+                    // Close mobile menu on link click
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                        menuButton.setAttribute('aria-expanded', 'false');
+                        iconOpen.classList.remove('hidden');
+                        iconClose.classList.add('hidden');
+                    }
+                });
+            });
 
-            // 4. Typing Text Animation
-            const typingText = document.getElementById('typing-text');
-            const phrases = [
-                "Intelligent AI Solutions.",
-                "LLM-Powered Applications.",
-                "Data-Driven Pipelines.",
-                "Geospatial AI Models."
-            ];
-            let phraseIndex = 0;
-            let charIndex = 0;
-            let isDeleting = false;
+            // 4. Typing Text Animation
+            const typingText = document.getElementById('typing-text');
+            const phrases = [
+                "Intelligent AI Solutions.",
+                "LLM-Powered Applications.",
+                "Data-Driven Pipelines.",
+                "Geospatial AI Models."
+            ];
+            let phraseIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
 
-            function type() {
-                const currentPhrase = phrases[phraseIndex];
+            function type() {
+                const currentPhrase = phrases[phraseIndex];
 
-                if (isDeleting) {
-                    typingText.textContent = currentPhrase.substring(0, charIndex - 1);
-                    charIndex--;
-                    if (charIndex === 0) {
-                        isDeleting = false;
-                        phraseIndex = (phraseIndex + 1) % phrases.length;
-                    }
-                } else {
-                    typingText.textContent = currentPhrase.substring(0, charIndex + 1);
-                    charIndex++;
-                    if (charIndex === currentPhrase.length) {
-                        isDeleting = true;
-                        setTimeout(type, 2000);
-                        return;
-                    }
-                }
+                if (isDeleting) {
+                    typingText.textContent = currentPhrase.substring(0, charIndex - 1);
+                    charIndex--;
+                    if (charIndex === 0) {
+                        isDeleting = false;
+                        phraseIndex = (phraseIndex + 1) % phrases.length;
+                    }
+                } else {
+                    typingText.textContent = currentPhrase.substring(0, charIndex + 1);
+                    charIndex++;
+                    if (charIndex === currentPhrase.length) {
+                        isDeleting = true;
+                        setTimeout(type, 2000);
+                        return;
+                    }
+                }
 
-                const typeSpeed = isDeleting ? 50 : 150;
-                setTimeout(type, typeSpeed);
-            }
-            if (typingText) type();
+                const typeSpeed = isDeleting ? 50 : 150;
+                setTimeout(type, typeSpeed);
+            }
+            if (typingText) type();
 
-            // 5. Contact Form Submission Handling (Web3Forms)
-            const contactForm = document.getElementById('contact-form');
-            const formResult = document.getElementById('form-result');
+            // 5. Contact Form Submission Handling (Web3Forms)
+            const contactForm = document.getElementById('contact-form');
+            const formResult = document.getElementById('form-result');
 
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    formResult.textContent = "Sending...";
-                    formResult.classList.remove('text-green-400', 'text-red-400');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    formResult.textContent = "Sending...";
+                    formResult.classList.remove('text-green-400', 'text-red-400');
 
-                    const formData = new FormData(contactForm);
-                    const object = {};
-                    formData.forEach((value, key) => { object[key] = value; });
-                    const json = JSON.stringify(object);
+                    const formData = new FormData(contactForm);
+                    const object = {};
+                    formData.forEach((value, key) => { object[key] = value; });
+                    const json = JSON.stringify(object);
 
-                    fetch('https://api.web3forms.com/submit', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                        body: json
-                    })
-                    .then(async (response) => {
-                        let json = await response.json();
-                        if (response.status == 200) {
-                            formResult.textContent = "Message sent successfully!";
-                            formResult.classList.add('text-green-400');
-                            contactForm.reset();
-                        } else {
-                            console.log(response);
-                            formResult.textContent = json.message || "Something went wrong.";
-                            formResult.classList.add('text-red-400');
-                        }
-                    })
-                    .catch(error => {
-                        console.log(error);
-                        formResult.textContent = "Something went wrong. Please try again.";
-                        formResult.classList.add('text-red-400');
-                    })
-                    .finally(() => {
-                        setTimeout(() => { formResult.textContent = ""; }, 5000);
-                    });
-                });
-            }
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                        body: json
+                    })
+                    .then(async (response) => {
+                        let json = await response.json();
+                        if (response.status == 200) {
+                            formResult.textContent = "Message sent successfully!";
+                            formResult.classList.add('text-green-400');
+                            contactForm.reset();
+                        } else {
+                            console.log(response);
+                            formResult.textContent = json.message || "Something went wrong.";
+                            formResult.classList.add('text-red-400');
+                        }
+                    })
+                    .catch(error => {
+                        console.log(error);
+                        formResult.textContent = "Something went wrong. Please try again.";
+                        formResult.classList.add('text-red-400');
+                    })
+                    .finally(() => {
+                        setTimeout(() => { formResult.textContent = ""; }, 5000);
+                    });
+                });
+            }
 
-            // 6. Client Form Submission Handling (Web3Forms)
-            const clientForm = document.getElementById('client-form');
-            const clientFormResult = document.getElementById('client-form-result');
+            // 6. Client Form Submission Handling (Web3Forms)
+            const clientForm = document.getElementById('client-form');
+            const clientFormResult = document.getElementById('client-form-result');
 
-            if (clientForm) {
-                clientForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    clientFormResult.textContent = "Sending...";
-                    clientFormResult.classList.remove('text-green-400', 'text-red-400');
+            if (clientForm) {
+                clientForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    clientFormResult.textContent = "Sending...";
+                    clientFormResult.classList.remove('text-green-400', 'text-red-400');
 
-                    const formData = new FormData(clientForm);
-                    const object = {};
-                    formData.forEach((value, key) => { object[key] = value; });
-                    const json = JSON.stringify(object);
+                    const formData = new FormData(clientForm);
+                    const object = {};
+                    formData.forEach((value, key) => { object[key] = value; });
+                    const json = JSON.stringify(object);
 
-                    fetch('https://api.web3forms.com/submit', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                        body: json
-                    })
-                    .then(async (response) => {
-                        let json = await response.json();
-                        if (response.status == 200) {
-                            clientFormResult.textContent = "Request sent! I will reach out shortly.";
-                            clientFormResult.classList.add('text-green-400');
-                            clientForm.reset();
-                        } else {
-                            console.log(response);
-                            clientFormResult.textContent = json.message || "Something went wrong.";
-                            clientFormResult.classList.add('text-red-400');
-                        }
-                    })
-                    .catch(error => {
-                        console.log(error);
-                        clientFormResult.textContent = "Something went wrong. Please try again.";
-                        clientFormResult.classList.add('text-red-400');
-                    })
-                    .finally(() => {
-                        setTimeout(() => { clientFormResult.textContent = ""; }, 5000);
-                    });
-                });
-            }
+                    fetch('https://api.web3forms.com/submit', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                        body: json
+                    })
+                    .then(async (response) => {
+                        let json = await response.json();
+                        if (response.status == 200) {
+                            clientFormResult.textContent = "Request sent! I will reach out shortly.";
+                            clientFormResult.classList.add('text-green-400');
+                            clientForm.reset();
+                        } else {
+                            console.log(response);
+                            clientFormResult.textContent = json.message || "Something went wrong.";
+                            clientFormResult.classList.add('text-red-400');
+                        }
+                    })
+                    .catch(error => {
+                        console.log(error);
+                        clientFormResult.textContent = "Something went wrong. Please try again.";
+                        clientFormResult.classList.add('text-red-400');
+                    })
+                    .finally(() => {
+                        setTimeout(() => { clientFormResult.textContent = ""; }, 5000);
+                    });
+                });
+            }
 
-        });
-    </script>
+        });
+    </script>
 </body>
 </html>
